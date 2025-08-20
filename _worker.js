@@ -5,7 +5,7 @@ export default {
         // Proxy tất cả requests đến GitHub
         if (url.pathname !== '/') {
             // Tạo URL đích
-            let targetUrl = new URL(`https://github.com/bibicadotnet${url.pathname}${url.search}`);
+            let targetUrl = new URL(`https://github.com/bibicadotnet/microsoft-edge-multi-portable/releases/download/${url.pathname}${url.search}`);
             
             // Tạo request mới với headers gốc
             let newRequest = new Request(targetUrl, {
